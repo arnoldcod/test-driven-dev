@@ -121,4 +121,7 @@ describe('TaxCalculation', function() {
         assert.strictEqual(tax(15000), 3000); 
     })
     
+    it('returns 1000', function(){                 //cycle 3
+        assert.strictEqual(tax(1000), 0); 
+    })
 })
