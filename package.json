@@ -10,7 +10,7 @@
   },
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "Work done by",
   "type": "module",
   "dependencies": {
     "chai": "^5.1.1",
