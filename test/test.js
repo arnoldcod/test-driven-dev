@@ -4,15 +4,13 @@ import {assert} from 'chai';
 import { describe } from 'mocha';
 import { it } from 'mocha';
 
-// import {multiply} from '../multiply.js';
-
-
-
 
 
 
 //?MULTIPLICATION
 //assertEqual(multiply(1, 1), 1); //!function not defined
+
+// import {multiply} from '../multiply.js';
 
 //  describe( 'Multiplier', function(){
 //     it('returns 1', function(){
@@ -40,7 +38,7 @@ import { it } from 'mocha';
 
 // //?FACTORIAL
 // // assert.Equal(factorial(0),1); //!function not defined
-//* import {factorial} from '../factorial.js';
+//  import {factorial} from '../factorial.js';
 
 // describe('factorial', function() {
 //     it('returns 1', function(){                 //cycle 1
@@ -63,7 +61,7 @@ import { it } from 'mocha';
 //         assert.strictEqual(factorial(-1), -1); 
 //     })
 
-//     it('returns -1', function(){                //cycle5
+//     it('returns -1', function(){                //cycle6
 //         assert.strictEqual(factorial(126), -1); 
 //     })
 // })
@@ -71,61 +69,66 @@ import { it } from 'mocha';
 
 // //?FIBONACCI
 // // assert.Equal(fibonacci(0),1); //!function not defined
-// import {fibonacci} from '../fibonacci.js';
+import {fibonacci} from '../fibonacci.js';
 
-// describe('fibonacci', function() {
-//     it('returns 1', function(){                 //cycle 1
-//         assert.strictEqual(fibonacci(0), 1); 
-//     })
-
-//     it('returns 1', function(){                 //cycle 2
-//         assert.strictEqual(fibonacci(1), 1); 
-//     })
-
-//     it('returns 2', function(){                 //cycle 3
-//         assert.strictEqual(fibonacci(2), 2); 
-//     })
-
-//     it('returns 3', function(){                 //cycle 3
-//         assert.strictEqual(fibonacci(3), 3); 
-//     })
-
-//     it('returns 5', function(){                 //cycle 4
-//         assert.strictEqual(fibonacci(4), 5); 
-//     })
-
-//     it('returns 8', function(){                 //cycle 5
-//         assert.strictEqual(fibonacci(5), 8); 
-//     })
-
-//     it('returns 13', function(){                 //cycle 6
-//         assert.strictEqual(fibonacci(6), 13); 
-//     })
-//     it('returns 88.99000000000001', function(){    //cycle 7
-//         assert.strictEqual(fibonacci(55),  88.99000000000001); 
-//     })
-// })
-
-
-
-
-//?STRECH
-
-//?TAX
-// assert.Equal(tax(15000), 3000);//cycle 1 //!function not defined 
-
-import {tax} from '../tax.js';
-
-describe('TaxCalculation', function() {
-    it('returns tax 3000', function(){               //cycle 2
-        assert.strictEqual(tax(15000), 3000); 
+describe('fibonacci', function() {
+    it('returns 0', function(){                 //cycle 1
+        assert.strictEqual(fibonacci(0), 0); 
     })
 
-    it('no tax', function(){                 //cycle 3
-        assert.strictEqual(tax(1000), 0); 
+    it('returns 1', function(){                 //cycle 2
+        assert.strictEqual(fibonacci(1), 1); 
     })
 
-    it('returns tax 9000', function(){                 //cycle 3
-        assert.strictEqual(tax(45000), 9000); 
+    it('returns 1', function(){                 //cycle 3
+        assert.strictEqual(fibonacci(2), 1); 
+    })
+
+    it('returns 2', function(){                 //cycle 3
+        assert.strictEqual(fibonacci(3), 2); 
+    })
+
+    it('returns 3', function(){                 //cycle 4
+        assert.strictEqual(fibonacci(4), 3); 
+    })
+
+    it('returns 5', function(){                 //cycle 5
+        assert.strictEqual(fibonacci(5), 5); 
+    })
+
+    it('returns 8', function(){                 //cycle 6
+        assert.strictEqual(fibonacci(6), 8); 
+    })
+
+    it('returns 40.45', function(){                 //cycle 7
+        assert.strictEqual(fibonacci(25), 40.45); 
+    })
+
+    it('returns 88.99000000000001', function(){    //cycle 8
+        assert.strictEqual(fibonacci(55),  88.99000000000001); 
     })
 })
+
+
+
+
+// //?STRECH
+
+// //?TAX
+// // assert.Equal(tax(15000), 3000);//cycle 1 //!function not defined 
+
+// import {tax} from '../tax.js';
+
+// describe('TaxCalculation', function() {
+//     it('returns tax 3000', function(){               //cycle 2
+//         assert.strictEqual(tax(15000), 3000); 
+//     })
+
+//     it('no tax', function(){                 //cycle 3
+//         assert.strictEqual(tax(1000), 0); 
+//     })
+
+//     it('returns tax 9000', function(){                 //cycle 4
+//         assert.strictEqual(tax(45000), 9000); 
+//     })
+// })
