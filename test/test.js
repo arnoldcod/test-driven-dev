@@ -101,5 +101,9 @@ describe('fibonacci', function() {
     it('returns 13', function(){                 //cycle 6
         assert.strictEqual(fibonacci(6), 13); 
     })
+    it('returns 88.99000000000001', function(){                 //cycle 6
+        assert.strictEqual(fibonacci(55), 
+        88.99000000000001); 
+    })
 })
 
