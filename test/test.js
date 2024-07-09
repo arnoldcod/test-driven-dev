@@ -112,5 +112,13 @@ import { it } from 'mocha';
 //?STRECH
 
 //?TAX
-// assert.Equal(tax(15000), 3000); //!function not defined
+// assert.Equal(tax(15000), 3000);//cycle 1 //!function not defined 
 
+import {tax} from '../tax.js';
+
+describe('TaxCalculation', function() {
+    it('returns 3000', function(){                 //cycle 2
+        assert.strictEqual(tax(15000), 3000); 
+    })
+    
+})
