@@ -84,29 +84,37 @@ describe('fibonacci', function() {
         assert.strictEqual(fibonacci(2), 1); 
     })
 
-    it('returns 2', function(){                 //cycle 3
+    it('returns 2', function(){                 //cycle 4
         assert.strictEqual(fibonacci(3), 2); 
     })
 
-    it('returns 3', function(){                 //cycle 4
+    it('returns 3', function(){                 //cycle 5
         assert.strictEqual(fibonacci(4), 3); 
     })
 
-    it('returns 5', function(){                 //cycle 5
+    it('returns 5', function(){                 //cycle 6
         assert.strictEqual(fibonacci(5), 5); 
     })
 
-    it('returns 8', function(){                 //cycle 6
-        assert.strictEqual(fibonacci(6), 8); 
+    it('returns 34', function(){                 //cycle 7
+        assert.strictEqual(fibonacci(9), 34); 
     })
 
-    it('returns 40.45', function(){                 //cycle 7
-        assert.strictEqual(fibonacci(25), 40.45); 
+    it('returns 144', function(){                 //cycle 8
+        assert.strictEqual(fibonacci(12), 144); 
     })
 
-    it('returns 88.99000000000001', function(){    //cycle 8
-        assert.strictEqual(fibonacci(55),  88.99000000000001); 
+    it('returns 1134903170', function(){    //cycle 9
+        assert.strictEqual(fibonacci(45), 1134903170); 
     })
+
+    it('returns 1.3069892237633987e+308', function(){    //cycle 10
+        assert.strictEqual(fibonacci(1476),  1.3069892237633987e+308); 
+    })
+
+    // it('Operation not feasible', function(){                 //cycle 11
+    //     assert.strictEqual(fibonacci(1478), 0); 
+    // })
 })
 
 
