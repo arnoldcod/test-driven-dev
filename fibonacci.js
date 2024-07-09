@@ -4,9 +4,8 @@
 //!Sequence = 0,  1,  1,       2,       3,         5,         8,        13,  21 .....
 
 
-//golden ratio in the fibonacci sequence
-
-// when n >= 12, n x 1.618 for the next number
+//golden ratio in the fibonacci sequence,
+//* when n >= 12, n x 1.618 for the next number
 
 //?  fibonacci(Fn) formula; 
 //?*  Fn = Fn-1 + Fn-2  where n>=2

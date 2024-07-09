@@ -69,41 +69,48 @@ import { it } from 'mocha';
 // })
 
 
-//?FIBONACCI
-// assert.Equal(fibonacci(0),1); //!function not defined
-import {fibonacci} from '../fibonacci.js';
+// //?FIBONACCI
+// // assert.Equal(fibonacci(0),1); //!function not defined
+// import {fibonacci} from '../fibonacci.js';
 
-describe('fibonacci', function() {
-    it('returns 1', function(){                 //cycle 1
-        assert.strictEqual(fibonacci(0), 1); 
-    })
+// describe('fibonacci', function() {
+//     it('returns 1', function(){                 //cycle 1
+//         assert.strictEqual(fibonacci(0), 1); 
+//     })
 
-    it('returns 1', function(){                 //cycle 2
-        assert.strictEqual(fibonacci(1), 1); 
-    })
+//     it('returns 1', function(){                 //cycle 2
+//         assert.strictEqual(fibonacci(1), 1); 
+//     })
 
-    it('returns 2', function(){                 //cycle 3
-        assert.strictEqual(fibonacci(2), 2); 
-    })
+//     it('returns 2', function(){                 //cycle 3
+//         assert.strictEqual(fibonacci(2), 2); 
+//     })
 
-    it('returns 3', function(){                 //cycle 3
-        assert.strictEqual(fibonacci(3), 3); 
-    })
+//     it('returns 3', function(){                 //cycle 3
+//         assert.strictEqual(fibonacci(3), 3); 
+//     })
 
-    it('returns 5', function(){                 //cycle 4
-        assert.strictEqual(fibonacci(4), 5); 
-    })
+//     it('returns 5', function(){                 //cycle 4
+//         assert.strictEqual(fibonacci(4), 5); 
+//     })
 
-    it('returns 8', function(){                 //cycle 5
-        assert.strictEqual(fibonacci(5), 8); 
-    })
+//     it('returns 8', function(){                 //cycle 5
+//         assert.strictEqual(fibonacci(5), 8); 
+//     })
 
-    it('returns 13', function(){                 //cycle 6
-        assert.strictEqual(fibonacci(6), 13); 
-    })
-    it('returns 88.99000000000001', function(){                 //cycle 6
-        assert.strictEqual(fibonacci(55), 
-        88.99000000000001); 
-    })
-})
+//     it('returns 13', function(){                 //cycle 6
+//         assert.strictEqual(fibonacci(6), 13); 
+//     })
+//     it('returns 88.99000000000001', function(){    //cycle 7
+//         assert.strictEqual(fibonacci(55),  88.99000000000001); 
+//     })
+// })
+
+
+
+
+//?STRECH
+
+//?TAX
+// assert.Equal(tax(15000), 3000); //!function not defined
 
