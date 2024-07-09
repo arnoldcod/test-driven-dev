@@ -117,11 +117,15 @@ import { it } from 'mocha';
 import {tax} from '../tax.js';
 
 describe('TaxCalculation', function() {
-    it('returns 3000', function(){                 //cycle 2
+    it('returns tax 3000', function(){               //cycle 2
         assert.strictEqual(tax(15000), 3000); 
     })
-    
-    it('returns 1000', function(){                 //cycle 3
+
+    it('no tax', function(){                 //cycle 3
         assert.strictEqual(tax(1000), 0); 
+    })
+
+    it('returns tax 9000', function(){                 //cycle 3
+        assert.strictEqual(tax(45000), 9000); 
     })
 })
