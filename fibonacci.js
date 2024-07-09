@@ -1,3 +1,4 @@
+//* by Arnold Weasly and Valentine Kiguli
 
 //! Fibonacci(Fn) 
 //!Sequence = 0,  1,  1,       2,       3,         5,         8,        13,  (13*1.618)= 21.034 , (21*1.618)= 33.97 ..... (1.618 * previous summmation)
@@ -34,7 +35,9 @@ export function fibonacci(n) { // n is the nth number in the Fibonacci sequence
     catch(error){
           console.error(error)
     }
-      if (n < 1 || n > 1476) return 0; 
+      if (n < 1 || n > 1476) 
+        return 0; 
+
     let previous = 1; // second number in the fibonacci sequence
     let current = 1; // third number in the fibonacci sequence
 
@@ -46,7 +49,7 @@ export function fibonacci(n) { // n is the nth number in the Fibonacci sequence
     return current;
 }
 
-//console.log(fibonacci(1476)); (1.3069892237633987e+308) // checking the output of the function
+// console.log(fibonacci(1476)); //// (1.3069892237633987e+308)  checking the output of the function
 
 
 
