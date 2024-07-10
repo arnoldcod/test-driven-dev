@@ -1,16 +1,17 @@
 //* by Arnold Weasly and Valentine Kiguli
 
 //! Fibonacci(Fn) 
-//!Sequence = 0,  1,  1,       2,       3,         5,         8,        13,  (13*1.618)= 21.034 , (21*1.618)= 33.97 ..... (1.618 * previous summmation)
+//!Sequence = 0,   1,   1,     2,      3,       5,       8,      13,  (13*1.618)= 21.034 , (21*1.618)= 33.97 ..... (1.618 * previous summmation)
 
 //! ratio = 1/1=1,  2/1=2,  3/2=1.5, 5/3=1.667, 8/5=1.60, 13/8=1.625, 21/13=1.615  
 
 //golden ratio in the fibonacci sequence,
 //* when n >= 8, n x 1.618 for the next number
 
+
+
 //?*  fibonacci(Fn) formula; 
 //?  Fn = Fn-1 + Fn-2  where n>=2
-
 
 
 //* fo = 0** , f1= 1** ,  (0+1) ,  (1+1) ,  (1+2) , (1+1 + 1+2), (1+2)+(1+1 + 1+2)
@@ -38,10 +39,10 @@ export function fibonacci(n) { // n is the nth number in the Fibonacci sequence
       if (n < 1 || n > 1476) 
         return 0; 
 
-    let previous = 1; // second number in the fibonacci sequence
-    let current = 1; // third number in the fibonacci sequence
+    let previous = 0; // first number in the fibonacci sequence
+    let current = 1; // second number in the fibonacci sequence
 
-    for (let i = 2; i < n; i++){
+    for (let i = 1; i < n; i++){
         const next = previous + current;
         previous = current;
         current = next;
